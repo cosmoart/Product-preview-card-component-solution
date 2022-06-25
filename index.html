@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Frontend Mentor | Product preview card component</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="CosmoArt">
+  <meta name="theme-color" content="#3c8067">
+  <meta name="description" content="Solution to the Frontend Mentor challenge, code by Cosmo Art">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <picture>
+      <source media="(min-width: 641px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(max-width: 640px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-desktop.jpg" alt="Perfume Gabrielle Essence..." width="200" height="447">
+    </picture>
+    <article>
+      <p class="perfume">Perfume</p>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p class="parragraft_1">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+
+      <p class="price">$149.99</p>
+
+      <button>Add to Cart</button>
+    </article>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/cosmoart" target="_blank" rel="noopener">CosmoArt</a>.
+  </footer>
+</body>
+
+</html>

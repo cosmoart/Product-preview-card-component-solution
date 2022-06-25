@@ -1,0 +1,149 @@
+/* ==== VAR ============ */
+:root {
+    /* Primary colors */
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral colors */
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+/* ==== ATTRIBUTION ==== */
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.attribution:hover {
+    opacity: 1;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==== CHALLENGE ====== */
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-size: 14px;
+    background: var(--Cream);
+    font-family: "Montserrat", sans-serif;
+    color: var(--Verydarkblue);
+}
+h1 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.9rem;
+}
+.perfume {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0;
+    opacity: 0.7;
+}
+main {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    max-width: 37rem;
+    overflow: hidden;
+    background: var(--White);
+}
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main article {
+    padding: 1.7rem;
+    display: flex;
+    flex-flow: column;
+}
+main > picture,
+main > article {
+    box-sizing: border-box;
+    width: 50%;
+}
+button {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 13px;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: var(--Darkcyan);
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+button::before {
+    content: "";
+    display: inline-block;
+    background: url("./images/icon-cart.svg") no-repeat;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+button:hover {
+    filter: brightness(0.8);
+}
+.parragraft_1 {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.price {
+    align-items: center;
+    font-weight: 700;
+    color: var(--Darkcyan);
+    font-size: 1.9rem;
+    font-family: "Fraunces", sans-serif;
+    margin: 33px 0;
+}
+.price::after {
+    content: "$169.99";
+    text-decoration: line-through;
+    font-size: 12px;
+    color: var(--Verydarkblue);
+    opacity: 0.7;
+    vertical-align: middle;
+    margin: 20px;
+}
+@media screen and (max-width: 40em) {
+    main {
+        flex-flow: column nowrap;
+        max-width: 23rem;
+        transform: scale(0.9);
+    }
+    main img {
+        width: 100%;
+    }
+    main > picture,
+    main > article {
+        width: auto;
+    }
+    .attribution {
+        opacity: 1;
+    }
+    .price {
+        margin: 20px;
+        font-size: 1.4;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+}
