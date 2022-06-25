@@ -136,9 +136,6 @@ button:hover {
     main > article {
         width: auto;
     }
-    .attribution {
-        opacity: 1;
-    }
     .price {
         margin: 20px;
         font-size: 1.4;
